@@ -29,6 +29,32 @@ Each Document size limit : **16MB**
 4. Needing to access object on its own is a complelling reason not embed it.
 
 
-> Design you schema based on the unique needs of your application -> the way to use data dicatates the schema design
+> Design your schema based on the unique needs of your application -> the way to use data dicatates the schema design
 
 Refer : <https://www.youtube.com/watch?v=J1RRM53I3kc&list=PL4RCxklHWZ9tB00Sh2nMftVIBaVG_-bmY&index=1>
+
+
+
+
+### Schema Anti-Patterns:  
+
+1. Over Normalization    
+Converting tables in sql to collections directly -> would lead to joins in query which are not optimized as they are in sql
+
+2. Over Embedding  
+Embedd all data in a single document and only have one collection -> too big document with unnecessary data being held together.  
+- Unbounded growth  
+- Deeply nested arrays  
+- Really large documents  
+
+
+
+
+
+
+
+
+
+
+
+
