@@ -81,6 +81,12 @@ GET /.geoip_databases/_search
 }
 ```
 
+or in short:
+
+```
+GET /.geoip_databases/_search
+```
+
 - **To get all index templates**
 
 ```
