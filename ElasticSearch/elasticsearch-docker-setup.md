@@ -169,7 +169,7 @@ GET logs-my_app-default/_search
 }
 ```
 
-The below method where we mark "_source": false is deprecated:
+
 ```
 GET logs-my_app-default/_search
 {
